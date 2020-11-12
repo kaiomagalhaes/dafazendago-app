@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  push:
+    branches: '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Refresh data
+      run: npm run refresh-data
+
+    - name: read new data 1
+      run:  ls -lah
+
+    - name: read new data
+      run:  npm run read-data

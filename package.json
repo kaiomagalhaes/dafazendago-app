@@ -1,0 +1,17 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "refresh-data": "node ./scripts/refresh_data.js",
+    "read-data": "cat ./data/products.json"
+  },
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
