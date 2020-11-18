@@ -14,6 +14,9 @@ jobs:
     - name: Refresh data
       run: npm run refresh-data
 
+    - name: Show data
+      run: cat data/products.json
+
     - name: install
       run: npm install
 
