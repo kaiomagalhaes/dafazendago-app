@@ -1,7 +1,7 @@
 const https = require('https');
 fs = require('fs');
 
-https.get('https://api.roadrunner.codelitt.dev/open_pull_requests.json', (resp) => {
+https.get('https://dafazendago-api.herokuapp.com/products.json', (resp) => {
   let data = '';
 
   // A chunk of data has been recieved.
