@@ -1,8 +1,10 @@
 name: Release
 
-on:
+on:  
   push:
-    branches: '*'
+  pull_request:
+  schedule:
+    - cron: '* * * * *'  # every day at midnight
 
 jobs:
   release:
