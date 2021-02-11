@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles['page']}>
 
       <div className={styles['hero-section']}>
-        <Image className={styles.logo} src="/logo.jpg" alt="me" width="64" height="64" />
+        <img src={'https://i.ibb.co/cvVYNp5/kaio-3.jpg'} className={styles.logo} />
       </div>
 
       <div className={styles["container"]}>
