@@ -13,7 +13,7 @@ https.get('https://dafazendago-api.herokuapp.com/products.json', (resp) => {
   resp.on('end', () => {
     const d = JSON.parse(data);
 
-    fs.writeFile('./data/products.json', data, function (err) {
+    fs.writeFile('./scripts/products.json', data, function (err) {
       if (err) return console.log(err);
       console.log('Data refreshed');
     });
