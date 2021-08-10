@@ -47,4 +47,4 @@ Object.keys(dataByCategory).forEach((category, i) => {
 page = page.replace('<categories />', categories)
 
 // Page update
-fs.writeFileSync('./index-update.html', page);
+fs.writeFileSync('./index.html', page);
