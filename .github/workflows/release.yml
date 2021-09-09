@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ '*' ]
+  schedule:
+    - cron:  "* */24 * * *
 
 jobs:
   release:
