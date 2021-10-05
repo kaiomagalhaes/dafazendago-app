@@ -26,7 +26,7 @@ let categoryTemplate = fs.readFileSync('./scripts/menu-templates/category.html')
 let itemTemplate = fs.readFileSync('./scripts/menu-templates/item.html').toString()
 let categories = ""
 Object.keys(dataByCategory).forEach((category, i) => {
-  const reference = category.replace(' ', '-').toLowerCase()
+  const reference = category.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase()
 
   let categoryRef = categoryTemplate
     .replace('<reference />', reference)
