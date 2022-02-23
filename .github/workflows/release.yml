@@ -1,9 +1,5 @@
 name: Release
 
-on:
-  schedule:
-    - cron:  "* */24 * * *"
-
 jobs:
   release:
     runs-on: ubuntu-latest
