@@ -1,17 +1,16 @@
 name: Release
 
+on:
+  push:
+    branches: [ 'master' ]
+  workflow_dispatch:
+
 jobs:
   release:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: Refresh data
-      run: node ./scripts/refresh_data.js
-
-    - name: Build
-      run: node ./scripts/build.js
 
     - uses: jakejarvis/s3-sync-action@master
       with:
